@@ -1,19 +1,43 @@
 <!DOCTYPE html>
-<html>
+<html lang="vi">
 <head>
-    <title>HỆ THỐNG BÀI TẬP VỀ NHÀ ONLINE - VIETMY COLLEGE</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đang vào hệ thống thi...</title>
     <style>
-        body { margin: 0; padding: 0; overflow: hidden; }
-        iframe {
-            display: block;
-            background: #fff;
-            border: none;
+        body {
+            background-color: #0f172a;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
             height: 100vh;
-            width: 100vw;
+            font-family: sans-serif;
+            margin: 0;
         }
+        .loader {
+            border: 4px solid rgba(255, 255, 255, 0.1);
+            border-left-color: #4f46e5;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            animation: spin 1s linear infinite;
+            margin-bottom: 20px;
+        }
+        @keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
     </style>
+    
+    <script>
+        // Thay link bên dưới bằng link Web App của bạn
+        var targetUrl = "https://script.google.com/macros/s/AKfycbwD1eqTzPcZl0s9xEQqdTr8g6SqviUxHPDBJTfH1N-D6gmHF1x2wNK51PF03p8_11HB2Q/exec";
+        
+        // Chuyển hướng ngay lập tức
+        window.location.replace(targetUrl);
+    </script>
 </head>
 <body>
-    <iframe src="https://script.google.com/macros/s/AKfycbze2UopDBFTKwmiIHphMPfLt6nfFQj6rnq_aooTSaUjT1JGZvNQi3DzcBNsqFt_bQB0Xg/exec"></iframe>
+    <div class="loader"></div>
+    <p>Đang kết nối đến Cao Đẳng Việt Mỹ...</p>
 </body>
 </html>
